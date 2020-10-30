@@ -84,32 +84,27 @@ main {
     margin-top: 0;
 }
 
-.sign-up-form-button-student{
+.button {
+    border-radius: 20px;
+    height: auto;
+    width: 12vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    font-weight: 700;
+    font-size: 1vw;
+}
+.sign-up-form-student{
     margin-top: 2vh;
     background-color: #2E3755;
     border: 1px solid #2E3755;
-    border-radius: 15px;
     color: white;
-    height: auto;
-    padding-top: 1vh;
-    padding-bottom: 1vh;
-    width: 12vw;
-    font-weight: 700;
-    font-size: 1vw;
 }
 
 .sign-up-form-partner{
     background-color: #F7CF6D;
     border: 2px solid #2E3755;
-    border-radius: 20px;
     color: #2E3755;
-    height: auto;
-    width: 12vw;
-    margin-top: 2vh;
-    font-weight: 700;
-    font-size: 1vw;
-    padding-top: 1vh;
-    padding-bottom: 1vh;
+    margin-top: 2vh; 
 }
 
 .login-form{
@@ -121,25 +116,18 @@ main {
     color: #2E3755;
 }
 
-.login-form-input-email{
-    background-color: gainsboro;
-    border: 1px solid gainsboro;
-    border-radius: 20px;
+.input{
     width: 24vw;
     height: auto;
     padding-top: 1.5vh;
     padding-bottom: 1.5vh;
+    background-color: gainsboro;
+    border: 1px solid gainsboro;
+    border-radius: 20px;
 }
 
 .login-form-input-password{
-    background-color: gainsboro;
-    border: 1px solid gainsboro;
-    border-radius: 20px;
-    width: 24vw;
-    height: auto;
     margin-top: 2vh;
-    padding-top: 1.5vh;
-    padding-bottom: 1.5vh;
 }
 
 .login-form-checkbox-and-forgot{
@@ -220,22 +208,12 @@ main {
         align-items: flex-end;
         justify-content: center;
     }
-   .header-navigation-burger-line1{
-    width: 10vw;
-    height: 1vh;
-    border-bottom: 5px solid white ;
-   }
-   .header-navigation-burger-line2{
-    width: 10vw;
-    height: 1vh;
-    border-bottom: 5px solid white ;
-   }
-   .header-navigation-burger-line3{
-    width: 10vw;
-    height: 1vh;
-    border-bottom: 5px solid white ;
-   }
 
+   .line{
+    width: 10vw;
+    height: 1vh;
+    border-bottom: 5px solid white ;
+   }
 
    main {
     background-color: white;
@@ -252,17 +230,12 @@ main {
     height: 40vh;
 }
 
-.login-form-input-email{
+.input{
     width: 80vw;
 }
-
 
 .login-form-input-email::placeholder {
     font-size: 3vw;
-}
-
-.login-form-input-password{
-    width: 80vw;
 }
 
 .login-form-input-password::placeholder {
@@ -275,7 +248,6 @@ main {
 
 .login-form-button{
     width: 80vw;
-
 }
 
 .login-signup-form{
@@ -306,20 +278,18 @@ main {
     width: 100vw;
 }
 
-.sign-up-form-button-student{
-    margin-top: 5vh;
+.button {
+    font-weight: 600;
     width: 80vw;
+    font-size: 4vw;
+}
+.sign-up-form-student{
+    margin-top: 5vh;
     background-color: #F7CF6D;
     border: 2px solid #2E3755;
     border-radius: 20px;
     color: #2E3755;
-    font-weight: 600;
-    
-}
 
-.sign-up-form-partner{
-    font-weight: 600;
-    width: 80vw;
 }
 
 .sign-up-form-h1{
@@ -335,6 +305,5 @@ main {
     margin-top: 1vh;
     line-height: 1vh;
 }
-
 
 }
