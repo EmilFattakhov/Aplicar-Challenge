@@ -24,18 +24,23 @@ header{
     justify-content: space-around;
     align-items: center;
     color: white;
+    font-size: 1vw;
 }
+
+
 .header-navigation-burger{
     display: none;
 }
 
-.header-button{
+.header-navigation-button{
     background-color: #FFB22A;
     color: white;
     height: 5vh;
     width: 7vw;
     border: 1px solid #FFB22A;
     border-radius: 15px;
+    font-size: 0.8vw;
+    font-weight: 600;
 }
 
 main {
@@ -64,15 +69,33 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: #2E3755;
+}
+
+.sign-up-form-h1{
+    font-weight: 800;
+    font-size: 2vw;
+}
+
+.sign-up-form-h3{
+    font-weight: 700;
+    font-size: 1vw;
+    line-height: 0.5vh;
+    margin-top: 0;
 }
 
 .sign-up-form-button-student{
+    margin-top: 2vh;
     background-color: #2E3755;
     border: 1px solid #2E3755;
     border-radius: 15px;
     color: white;
-    height: 5vh;
+    height: auto;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
     width: 12vw;
+    font-weight: 700;
+    font-size: 1vw;
 }
 
 .sign-up-form-partner{
@@ -80,9 +103,13 @@ main {
     border: 2px solid #2E3755;
     border-radius: 20px;
     color: #2E3755;
-    height: 5vh;
+    height: auto;
     width: 12vw;
     margin-top: 2vh;
+    font-weight: 700;
+    font-size: 1vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
 }
 
 .login-form{
@@ -99,7 +126,9 @@ main {
     border: 1px solid gainsboro;
     border-radius: 20px;
     width: 24vw;
-    height: 5vh;
+    height: auto;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
 }
 
 .login-form-input-password{
@@ -107,15 +136,16 @@ main {
     border: 1px solid gainsboro;
     border-radius: 20px;
     width: 24vw;
-    height: 5vh;
+    height: auto;
     margin-top: 2vh;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
 }
 
 .login-form-checkbox-and-forgot{
     width: 24vw;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
     text-align: center;
 }
@@ -126,11 +156,20 @@ main {
     width: 3vh;
 }
 
-.login-form-p{
-    display: inline;
-    text-decoration: underline;
+.login-form-input-label{
+    font-size: 0.7vw;
+    font-weight: 700;
 }
-login-form-p-mobile {
+
+.login-form-p{
+    display: inline-flex;
+    margin-left: 7vw;
+    text-decoration: underline;
+    font-size: 0.7vw;
+    font-weight: 700;
+}
+
+.login-form-p-mobile {
     display: none;
 }
 
@@ -139,7 +178,11 @@ login-form-p-mobile {
     border: 1px solid #FFB22A;
     border-radius: 20px;
     width: 24vw;
-    height: 5vh;
+    height: auto;
+    font-weight: 600;
+    font-size: 1vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
     margin-top: 2vh;
     color: white;
 }
@@ -213,8 +256,17 @@ login-form-p-mobile {
     width: 80vw;
 }
 
+
+.login-form-input-email::placeholder {
+    font-size: 3vw;
+}
+
 .login-form-input-password{
     width: 80vw;
+}
+
+.login-form-input-password::placeholder {
+    font-size: 3vw;
 }
 
 .login-form-checkbox-and-forgot{
@@ -231,10 +283,20 @@ login-form-p-mobile {
     width: 100vw;
 }
 
-login-form-p-mobile p{
+.login-form-p-mobile{
     display: block;
     border-bottom: 1px solid black;
-    text-decoration: underline;
+    font-size: 3vw;
+}
+
+.login-form-h1{
+    font-size: 6vw;
+    font-weight: 800;
+    color: #2E3755;
+}
+
+.login-form-button{
+    font-size: 5vw;
 }
 
 .sign-up-form{
@@ -245,16 +307,33 @@ login-form-p-mobile p{
 }
 
 .sign-up-form-button-student{
+    margin-top: 5vh;
     width: 80vw;
     background-color: #F7CF6D;
     border: 2px solid #2E3755;
     border-radius: 20px;
     color: #2E3755;
+    font-weight: 600;
     
 }
 
 .sign-up-form-partner{
+    font-weight: 600;
     width: 80vw;
+}
+
+.sign-up-form-h1{
+    font-size: 6vw;
+    font-weight: 800;
+    color: #2E3755;
+}
+
+.sign-up-form-h3{
+    font-size: 4vw;
+    font-weight: 700;
+    color: #2E3755;
+    margin-top: 1vh;
+    line-height: 1vh;
 }
 
 
