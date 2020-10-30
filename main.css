@@ -179,6 +179,77 @@ main {
     color: white;
 }
 
+
+
+@media (max-width: 900px) {
+    header{
+        display: grid;
+        grid-template-columns: 10vw 30vw 55vw 5vw;
+    }
+    
+    .header-logo img{
+        width: 25vw;
+    }
+    
+    .header-navigation{
+        font-size: 1.5vw;
+        margin-left: 1vw;
+    }
+    
+    .header-navigation-button{
+        height: auto;
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+        width: auto;
+        font-size: 1.3vw;
+    }
+    
+    .sign-up-form-h1{
+        font-size: 4vw;
+    }
+    
+    .sign-up-form-h3{
+        font-size: 1.5vw;
+    }
+    
+    .button {
+        width: 15vw;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+        font-size: 1vw;
+    }
+    .sign-up-form-student{
+        margin-top: 3vh;
+    }    
+    .input{
+        width: 35vw;
+        height: auto;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+    }
+    
+    .login-form-checkbox-and-forgot{
+        margin-top: 2vh;
+        width: 35vw;
+    }
+
+    .login-form-input-label{
+        font-size: 1vw;
+    }
+    
+    .login-form-p{
+        margin-left: 12vw;
+        font-size: 1vw;
+    }
+    
+    .login-form-button{
+        width: 35vw;
+        font-size: 2vw;
+        padding-top: 1.5vh;
+        padding-bottom: 1.5vh;
+    }
+}
+
 @media (max-width: 500px) {
     header{
         margin: 0;
@@ -310,74 +381,4 @@ main {
     line-height: 1vh;
 }
 
-}
-
-
-@media (max-width: 900px) {
-    header{
-        display: grid;
-        grid-template-columns: 10vw 30vw 55vw 5vw;
-    }
-    
-    .header-logo img{
-        width: 25vw;
-    }
-    
-    .header-navigation{
-        font-size: 1.5vw;
-        margin-left: 1vw;
-    }
-    
-    .header-navigation-button{
-        height: auto;
-        padding-top: 1vh;
-        padding-bottom: 1vh;
-        width: auto;
-        font-size: 1.3vw;
-    }
-    
-    .sign-up-form-h1{
-        font-size: 4vw;
-    }
-    
-    .sign-up-form-h3{
-        font-size: 1.5vw;
-    }
-    
-    .button {
-        width: 15vw;
-        padding-top: 2vh;
-        padding-bottom: 2vh;
-        font-size: 1vw;
-    }
-    .sign-up-form-student{
-        margin-top: 3vh;
-    }    
-    .input{
-        width: 35vw;
-        height: auto;
-        padding-top: 2vh;
-        padding-bottom: 2vh;
-    }
-    
-    .login-form-checkbox-and-forgot{
-        margin-top: 2vh;
-        width: 35vw;
-    }
-
-    .login-form-input-label{
-        font-size: 1vw;
-    }
-    
-    .login-form-p{
-        margin-left: 12vw;
-        font-size: 1vw;
-    }
-    
-    .login-form-button{
-        width: 35vw;
-        font-size: 2vw;
-        padding-top: 1.5vh;
-        padding-bottom: 1.5vh;
-    }
 }
