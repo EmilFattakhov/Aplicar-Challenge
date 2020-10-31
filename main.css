@@ -2,7 +2,7 @@ body{
     margin: 0;
 }
 
-header{
+.header{
     font-family: 'Montserrat', sans-serif;
     overflow: hidden;
     margin: 0;
@@ -12,17 +12,17 @@ header{
     grid-template-columns: 10vw 40vw 40vw 10vw;
 }
 
-.header-logo{
+.header__logo{
     display: flex;
     align-items: center;
 }
-.header-logo img{
+.header__img{
     display: block;
     width: 12vw;
     padding: auto;
 }
 
-.header-navigation{
+.header__navigation{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -31,12 +31,11 @@ header{
     font-size: 1vw;
 }
 
-
-.header-navigation-burger{
+.header__burger{
     display: none;
 }
 
-.header-navigation-button{
+.header__button{
     background-color: #FFB22A;
     color: white;
     height: 5vh;
@@ -58,7 +57,7 @@ main {
     align-items: center;
 }
 
-.login-signup-form{
+.form{
     height: 80vh;
     width: 90vw;
     display: grid;
@@ -67,7 +66,7 @@ main {
     border-radius: 25px;
 }
 
-.sign-up-form{
+.form__signup{
     background-color: #F7CF6D;
     display: flex;
     flex-direction: column;
@@ -76,19 +75,19 @@ main {
     color: #2E3755;
 }
 
-.sign-up-form-h1{
+.signup__header{
     font-weight: 800;
     font-size: 2vw;
 }
 
-.sign-up-form-h3{
+.signup__description{
     font-weight: 700;
     font-size: 1vw;
     line-height: 0.5vh;
     margin-top: 0;
 }
 
-.button {
+.signup__button {
     border-radius: 20px;
     height: auto;
     width: 12vw;
@@ -97,21 +96,21 @@ main {
     font-weight: 700;
     font-size: 1vw;
 }
-.sign-up-form-student{
+.signup__button--student{
     margin-top: 2vh;
     background-color: #2E3755;
     border: 1px solid #2E3755;
     color: white;
 }
 
-.sign-up-form-partner{
+.signup__button--partner{
     background-color: #F7CF6D;
     border: 2px solid #2E3755;
     color: #2E3755;
     margin-top: 2vh; 
 }
 
-.login-form{
+.form__login{
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -120,7 +119,13 @@ main {
     color: #2E3755;
 }
 
-.input{
+.login__header{
+    font-size: 3vw;
+    font-weight: 800;
+    color: #2E3755;
+}
+
+.login__input{
     width: 24vw;
     height: auto;
     padding-top: 1.5vh;
@@ -130,30 +135,30 @@ main {
     border-radius: 20px;
 }
 
-.login-form-input-password{
+.login__input--password{
     margin-top: 2vh;
 }
 
-.login-form-checkbox-and-forgot{
+.login__helpers{
     width: 24vw;
     display: flex;
     flex-direction: row;
     align-items: center;
     text-align: center;
 }
-.login-form-input-checkbox{
+.login__helpers--checkbox{
     display: inline-block;
     text-align: center;
     background-color: gainsboro ;
     width: 3vh;
 }
 
-.login-form-input-label{
+.login__helpers__label{
     font-size: 0.7vw;
     font-weight: 700;
 }
 
-.login-form-p{
+.login__helpers--password{
     display: inline-flex;
     margin-left: 7vw;
     text-decoration: underline;
@@ -161,11 +166,11 @@ main {
     font-weight: 700;
 }
 
-.login-form-p-mobile {
+.login__helpers--passwordmobile {
     display: none;
 }
 
-.login-form-button{
+.login__submit{
     background-color: #FFB22A;
     border: 1px solid #FFB22A;
     border-radius: 20px;
@@ -182,67 +187,74 @@ main {
 
 
 @media (max-width: 900px) {
-    header{
+    .header{
         display: grid;
         grid-template-columns: 10vw 30vw 55vw 5vw;
     }
     
-    .header-logo img{
+    .header__img{
         width: 25vw;
     }
     
-    .header-navigation{
+    .header__navigation{
         font-size: 1.5vw;
         margin-left: 1vw;
     }
     
-    .header-navigation-button{
+    .header__button{
         height: auto;
         padding-top: 1vh;
         padding-bottom: 1vh;
         width: auto;
         font-size: 1.3vw;
     }
+
+    main {
+        height: 70vh;
+    }
+    .form{
+        height: 50vh;
+    }
     
-    .sign-up-form-h1{
+    .signup__header{
         font-size: 4vw;
     }
     
-    .sign-up-form-h3{
+    .signup__description{
         font-size: 1.5vw;
     }
     
-    .button {
+    .signup__button {
         width: 15vw;
         padding-top: 2vh;
         padding-bottom: 2vh;
         font-size: 1vw;
     }
-    .sign-up-form-student{
+    .signup__button--student{
         margin-top: 3vh;
     }    
-    .input{
+    .login__input{
         width: 35vw;
         height: auto;
         padding-top: 2vh;
         padding-bottom: 2vh;
     }
     
-    .login-form-checkbox-and-forgot{
+    .login__helpers{
         margin-top: 2vh;
         width: 35vw;
     }
 
-    .login-form-input-label{
+    .login__helpers__label{
         font-size: 1vw;
     }
     
-    .login-form-p{
+    .login__helpers--password{
         margin-left: 12vw;
         font-size: 1vw;
     }
     
-    .login-form-button{
+    .login__submit{
         width: 35vw;
         font-size: 2vw;
         padding-top: 1.5vh;
@@ -262,12 +274,12 @@ main {
         display: none;
     }
 
-    .header-logo img{
+    .header__img{
         display: block;
         width: 50vw;
     }
 
-    .header-navigation{
+    .header__navigation{
         display: none;
     }
 
@@ -275,7 +287,7 @@ main {
         display: none;
     }
     
-    .header-navigation-burger{
+    .header__burger{
         display: flex;
         height: 10vh;
         padding-right: 5vw;
@@ -284,7 +296,7 @@ main {
         justify-content: center;
     }
 
-   .line{
+   .burger__line{
     width: 10vw;
     height: 1vh;
     border-bottom: 5px solid white ;
@@ -292,73 +304,70 @@ main {
 
    main {
     background-color: white;
-    overflow: hidden;
-    width: 100%;
-    height: 100vh;
-}
+    }
    /* Login and SignUp */
 
-   .login-form{
+   .form__login{
     position: absolute;
     width: 100vw;
     top: 10vh;
     height: 40vh;
 }
 
-.input{
+.login__input{
     width: 80vw;
 }
 
-.login-form-input-email::placeholder {
+.login__input--email::placeholder {
     font-size: 3vw;
 }
 
-.login-form-input-password::placeholder {
+.login__input--password::placeholder {
     font-size: 3vw;
 }
 
-.login-form-checkbox-and-forgot{
+.login__helpers{
     display: none;
 }
 
-.login-form-button{
+.login__submit{
     width: 80vw;
 }
 
-.login-signup-form{
+.form{
     height: 100vh;
     width: 100vw;
 }
 
-.login-form-p-mobile{
+.login__helpers--passwordmobile{
     display: block;
     border-bottom: 1px solid black;
     font-size: 3vw;
 }
 
-.login-form-h1{
+.login__header{
     font-size: 6vw;
     font-weight: 800;
     color: #2E3755;
 }
 
-.login-form-button{
+.login__submit{
     font-size: 5vw;
 }
 
-.sign-up-form{
+.form__signup{
     position: absolute;
     top: 50vh;
     height: 45vh;
     width: 100vw;
 }
 
-.button {
+.signup__button {
     font-weight: 600;
     width: 80vw;
     font-size: 4vw;
 }
-.sign-up-form-student{
+.signup__button--student{
     margin-top: 5vh;
     background-color: #F7CF6D;
     border: 2px solid #2E3755;
@@ -367,13 +376,13 @@ main {
 
 }
 
-.sign-up-form-h1{
+.signup__header{
     font-size: 6vw;
     font-weight: 800;
     color: #2E3755;
 }
 
-.sign-up-form-h3{
+.signup__description{
     font-size: 4vw;
     font-weight: 700;
     color: #2E3755;
